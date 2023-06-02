@@ -2,6 +2,8 @@
 A repository containing my experiment on implementing the [Music VAE](https://magenta.tensorflow.org/music-vae) model to extract the 4-bars drum samples from the [MIDI dataset](https://magenta.tensorflow.org/datasets/groove).
 
 ## Overview
+The [MusicVAE paper](https://arxiv.org/pdf/1803.05428.pdf) introduces a novel approach to address the limitations of existing recurrent Variational Autoencoder (VAE) models in modeling sequential data with long-term structure. The proposed solution is a hierarchical decoder, which generates embeddings for sub-sequences of the input and uses them to independently generate each subsequence. This structure encourages the model to effectively utilize its latent code and avoid the "posterior collapse" problem commonly observed in recurrent VAEs. By focusing on modeling sequences of musical notes, MusicVAE demonstrates significant improvements in sampling, interpolation, and reconstruction compared to a traditional "flat" baseline model. This repository will do a simple reproduce of the paper MusicVAE, which allows the exploration and experimentation of this approach to generate meaningful novel audio data.
+
 - **VAE Model**: [Music VAE](https://github.com/magenta/magenta/tree/main/magenta/models/music_vae)
 - **Input**: [MIDI dataset](https://magenta.tensorflow.org/datasets/groove) (Filtered to 4-bar only).
 - **Process**: Train Music VAE.
