@@ -46,10 +46,10 @@ musicvae-eval.ipynb
 
 ## Figures
 #### Training Loss
-![Training loss](/assets/training_loss.png)
+![Training loss](/assets/training_loss.png | width=100)
 
 #### Validation Loss
-![Val loss](/assets/validation_loss.png)
+![Val loss](/assets/validation_loss.png | width=250)
 
 ### Validation Metrics
 ![Val metrics](/assets/validation_metrics.png)
