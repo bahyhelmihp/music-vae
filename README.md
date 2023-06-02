@@ -9,6 +9,7 @@ A repository containing my experiment on implementing the [Music VAE](https://ma
 
 ## Folder Structure
 ```
+├── assets # Figures
 ├── ckpts
 │   ├── groove-4-bar
 │   |   ├── train # Your trained checkpoints & event logs go here
@@ -63,3 +64,6 @@ musicvae-eval.ipynb
 - A Tensorboard GUI has also been included in each notebook to monitor the metrics and losses of the training & validation process.
 - Evaluation is done on the 2nd GPU, to prevent overlapping usage on the 1st GPU that is used for training.
 ```
+
+## Acknowledgements
+The code is developed based on https://github.com/magenta/magenta/tree/main/magenta/models/music_vae.
