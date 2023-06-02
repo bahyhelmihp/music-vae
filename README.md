@@ -46,11 +46,10 @@ musicvae-eval.ipynb
 
 ## Figures
 #### Training Loss
-<!-- ![Training loss](/assets/training_loss.png | width=100) -->
-<img src="/assets/training_loss.png" width="100" height="100">
+<img src="/assets/training_loss.png" width="500">
 
 #### Validation Loss
-![Val loss](/assets/validation_loss.png)
+<img src="/assets/validation_loss.png" width="500">
 
 ### Validation Metrics
 ![Val metrics](/assets/validation_metrics.png)
@@ -59,6 +58,11 @@ musicvae-eval.ipynb
 - Loss value stops decreasing in validation data, approaching 10.000 steps. 
 - Same plateau pattern also observed in the validation metrics. 
 - Time & resource constraint also taken into account.
+
+## Samples
+Generated Sample 1 | Generated Sample 2
+:-: | :-:
+<video src='/assets/sample0.mp4' width=300/> | <video src='sample1.mp4' width=300/>
 
 **Note** 
 ```
