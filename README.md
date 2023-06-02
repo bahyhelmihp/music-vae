@@ -36,14 +36,14 @@ musicvae-eval.ipynb
 ```
 
 ## Inference Process
-Inference on the trained MusicVAE model can be seen on the **Inference - <Inference Type>** section of the below notebook.
+Inference on the trained MusicVAE model can be seen on the **Inference - Sample** & **Inference - Interpolate** section of the below notebook.
 ```bash
 musicvae-eval.ipynb
 ```
 
 **Note** 
 ```
-- Refer to the following link to download the full model checkpoints logs: [Checkpoints](https://www.com)
+- Refer to the following link to download the full model checkpoints logs: [Checkpoints](https://drive.google.com/file/d/1U2PnPJu3igqZCaocP3G-6gmRtDzKK2VY/view?usp=sharing)
 - Refer to the following link to downdload the full val event logs: [Event Logs](https://drive.google.com/file/d/1gaU3qYeJPechC51lHZQZc2dcvhQYqR2f/view?usp=sharing)
 - A Tensorboard GUI has also been included in each notebook to monitor the metrics and losses of the training & validation process.
 - Training is stopped at global_steps = 10.000 to prevent the overfitting. See the loss figures above for more details.
