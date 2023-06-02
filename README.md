@@ -23,6 +23,25 @@ A repository containing my experiment on implementing the [Music VAE](https://ma
 ```
 
 ## Environment Preparation
+Install and create conda environment with the provided `environment.yml` file.
+This conda environment was tested with the NVIDIA RTX 3090.
+
+The details of each dependency can be found in the environment.yml file.
+```
+conda env create -f environment.yml
+conda activate test
+```
+
+**Note** 
+```
+- If you have trouble importing the above environment, you can manually create your own environment following this link: https://github.com/magenta/magenta/blob/main/README.md
+```
+
+## Exploratory Data Analysis
+A simple exploratory data analysis (EDA) on the training data of MIDI dataset can be found in:
+```bash
+musicvae-eda.ipynb
+```
 
 ## Training Process
 Training process is quite straightforward, steps-by-steps process has been explained in:
