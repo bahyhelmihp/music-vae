@@ -9,6 +9,7 @@ A repository containing my experiment on implementing the [Music VAE](https://ma
 
 ## Folder Structure
 ```
+├── assets # Figures
 ├── ckpts
 │   ├── groove-4-bar
 │   |   ├── train # Your trained checkpoints & event logs go here
@@ -40,12 +41,30 @@ Inference on the trained MusicVAE model can be seen on the **Inference - Sample*
 ```bash
 musicvae-eval.ipynb
 ```
+- Refer to the following link to download the full model checkpoints logs: [Checkpoints](https://drive.google.com/file/d/1U2PnPJu3igqZCaocP3G-6gmRtDzKK2VY/view?usp=sharing)
+- Refer to the following link to downdload the full val event logs: [Event Logs](https://drive.google.com/file/d/1gaU3qYeJPechC51lHZQZc2dcvhQYqR2f/view?usp=sharing)
+
+## Figures
+#### Training Loss
+<!-- ![Training loss](/assets/training_loss.png | width=100) -->
+<img src="/assets/training_loss.png" width="100" height="100">
+
+#### Validation Loss
+![Val loss](/assets/validation_loss.png)
+
+### Validation Metrics
+![Val metrics](/assets/validation_metrics.png)
+
+- Training is stopped at global_steps = 10.000 to prevent overfitting. 
+- Loss value stops decreasing in validation data, approaching 10.000 steps. 
+- Same plateau pattern also observed in the validation metrics. 
+- Time & resource constraint also taken into account.
 
 **Note** 
 ```
-- Refer to the following link to download the full model checkpoints logs: [Checkpoints](https://drive.google.com/file/d/1U2PnPJu3igqZCaocP3G-6gmRtDzKK2VY/view?usp=sharing)
-- Refer to the following link to downdload the full val event logs: [Event Logs](https://drive.google.com/file/d/1gaU3qYeJPechC51lHZQZc2dcvhQYqR2f/view?usp=sharing)
 - A Tensorboard GUI has also been included in each notebook to monitor the metrics and losses of the training & validation process.
-- Training is stopped at global_steps = 10.000 to prevent the overfitting. See the loss figures above for more details.
 - Evaluation is done on the 2nd GPU, to prevent overlapping usage on the 1st GPU that is used for training.
 ```
+
+## Acknowledgements
+The code is developed based on https://github.com/magenta/magenta/tree/main/magenta/models/music_vae.
