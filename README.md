@@ -3,6 +3,6 @@ A repository containing my experiment on implementing the [Music VAE](https://ma
 
 ### Project description
 - **VAE Model**: [Music VAE](https://github.com/magenta/magenta/tree/main/magenta/models/music_vae)
-- **Input**: Preprocessed MIDI files.
-- **Process**: Training the Music VAE.
+- **Input**: MIDI - 4-bar Dataset.
+- **Process**: Train Music VAE.
 - **Output**: 4-bars drum samples (MIDI).
