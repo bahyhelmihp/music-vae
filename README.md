@@ -64,6 +64,10 @@ musicvae-eval.ipynb
 - Refer to the following link to downdload the full val event logs: [Event Logs](https://drive.google.com/file/d/1gaU3qYeJPechC51lHZQZc2dcvhQYqR2f/view?usp=sharing)
 
 ## Figures
+#### EDA Example
+<img src="/assets/sample_eda.png" width="700">
+- A barplot example that shows the average beat-per-minute (BPM) of each music genre in the datset.
+
 #### Training Loss
 <img src="/assets/training_loss.png" width="700">
 
