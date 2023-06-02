@@ -3,7 +3,7 @@ A repository containing my experiment on implementing the [Music VAE](https://ma
 
 ## Overview
 - **VAE Model**: [Music VAE](https://github.com/magenta/magenta/tree/main/magenta/models/music_vae)
-- **Input**: MIDI - 4-bar Dataset.
+- **Input**: [MIDI dataset](https://magenta.tensorflow.org/datasets/groove) (Filtered to 4-bar only).
 - **Process**: Train Music VAE.
 - **Output**: 4-bars drum samples (MIDI), 4-bars drum interpolation (Additional).
 
@@ -54,15 +54,15 @@ musicvae-eval.ipynb
 ### Validation Metrics
 ![Val metrics](/assets/validation_metrics.png)
 
-- Training is stopped at global_steps = 10.000 to prevent overfitting. 
-- Loss value stops decreasing in validation data, approaching 10.000 steps. 
-- Same plateau pattern also observed in the validation metrics. 
-- Time & resource constraint also taken into account.
+- To mitigate the risk of overfitting, the training process was halted at a specific global step, namely 10,000.
+- The loss value ceased to decrease significantly as the training progressed towards 10,000 steps.
+- The same plateau pattern was also observed in the validation metrics, indicating that the model's generalization capability had reached a plateau.
+- Time & resource constraint also taken into account, continuing training beyond this point would have incurred diminishing returns in terms of model performance while consuming additional computational resources and time.
 
 
 **Note** 
 ```
-- A Tensorboard GUI has also been included in each notebook to monitor the metrics and losses of the training & validation process.
+- Tensorboard GUI has also been included in each notebook to monitor the metrics and losses of the training & validation process.
 - Evaluation is done on the 2nd GPU, to prevent overlapping usage on the 1st GPU that is used for training.
 ```
 
@@ -81,4 +81,4 @@ https://github.com/bahyhelmihp/music-vae/assets/36230581/5f319853-9086-43ff-ae7b
 - Full samples of generated 4-bar drums audio and interpolations can be found on [results](https://github.com/bahyhelmihp/music-vae/tree/main/results) folder.
 
 ## Acknowledgements
-The code is developed based on https://github.com/magenta/magenta/tree/main/magenta/models/music_vae.
+The code is developed based on https://github.com/magenta/magenta/tree/main/magenta/models/music_vae. The experiment was trained on a single RTX 3090 GPU.
