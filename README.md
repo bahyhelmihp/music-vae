@@ -46,10 +46,10 @@ musicvae-eval.ipynb
 
 ## Figures
 #### Training Loss
-<img src="/assets/training_loss.png" width="800">
+<img src="/assets/training_loss.png" width="700">
 
 #### Validation Loss
-<img src="/assets/validation_loss.png" width="800">
+<img src="/assets/validation_loss.png" width="700">
 
 ### Validation Metrics
 ![Val metrics](/assets/validation_metrics.png)
@@ -62,7 +62,9 @@ musicvae-eval.ipynb
 ## Samples
 Generated Sample 1 | Generated Sample 2
 :-: | :-:
-<video src='/assets/sample0.mp4' width=300></video> | <video src='sample1.mp4' width=300></video>
+https://github.com/bahyhelmihp/music-vae/assets/36230581/19a60e9c-54ae-401e-84ba-1c3451d0b135 | https://github.com/bahyhelmihp/music-vae/assets/36230581/5ca0d0ff-d04a-4d72-9f03-a8ee2626fe66
+
+
 
 **Note** 
 ```
