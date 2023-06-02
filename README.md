@@ -43,8 +43,9 @@ musicvae-eval.ipynb
 
 **Note** 
 ```
-- Only the latest checkpoint of the trained MusicVAE model is uploaded due to repository size limit. Refer to the following link for full checkpoint logs: [Link](https://www.com) 
-- A Tensorboard in-cell GUI has also been included in each notebook, to monitor the metrics and losses of the training & validation process.
-- Training is stopped at global_steps = 10.000, because the validation losses has stop decreasing.
+- Refer to the following link to download the full model checkpoints logs: [Checkpoints](https://www.com)
+- Refer to the following link to downdload the full val event logs: [Event Logs](https://drive.google.com/file/d/1gaU3qYeJPechC51lHZQZc2dcvhQYqR2f/view?usp=sharing)
+- A Tensorboard GUI has also been included in each notebook to monitor the metrics and losses of the training & validation process.
+- Training is stopped at global_steps = 10.000 to prevent the overfitting. See the loss figures above for more details.
 - Evaluation is done on the 2nd GPU, to prevent overlapping usage on the 1st GPU that is used for training.
 ```
