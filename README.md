@@ -46,10 +46,10 @@ musicvae-eval.ipynb
 
 ## Figures
 #### Training Loss
-<img src="/assets/training_loss.png" width="500">
+<img src="/assets/training_loss.png" width="800">
 
 #### Validation Loss
-<img src="/assets/validation_loss.png" width="500">
+<img src="/assets/validation_loss.png" width="800">
 
 ### Validation Metrics
 ![Val metrics](/assets/validation_metrics.png)
@@ -62,7 +62,7 @@ musicvae-eval.ipynb
 ## Samples
 Generated Sample 1 | Generated Sample 2
 :-: | :-:
-<video src='/assets/sample0.mp4' width=300/> | <video src='sample1.mp4' width=300/>
+<video src='/assets/sample0.mp4' width=300></video> | <video src='sample1.mp4' width=300></video>
 
 **Note** 
 ```
