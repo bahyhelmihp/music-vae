@@ -98,6 +98,7 @@ https://github.com/bahyhelmihp/music-vae/assets/36230581/89918430-ec38-4db1-a0a9
 https://github.com/bahyhelmihp/music-vae/assets/36230581/5f319853-9086-43ff-ae7b-5e7d1d65e6a5
 
 - Full samples of generated 4-bar drums audio and interpolations can be found on [results](https://github.com/bahyhelmihp/music-vae/tree/main/results) folder.
+- Generated samples with another different temperature for Softmax in the decoding process, i.e., 0.75 is also available on the aforementioned folder.
 
 ## Acknowledgements
 The code is developed based on https://github.com/magenta/magenta/tree/main/magenta/models/music_vae. The experiment was trained on a single RTX 3090 GPU.
