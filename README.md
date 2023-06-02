@@ -59,18 +59,26 @@ musicvae-eval.ipynb
 - Same plateau pattern also observed in the validation metrics. 
 - Time & resource constraint also taken into account.
 
-## Samples
-Generated Sample 1 | Generated Sample 2
-:-: | :-:
-https://github.com/bahyhelmihp/music-vae/assets/36230581/19a60e9c-54ae-401e-84ba-1c3451d0b135 | https://github.com/bahyhelmihp/music-vae/assets/36230581/5ca0d0ff-d04a-4d72-9f03-a8ee2626fe66
-
-
 
 **Note** 
 ```
 - A Tensorboard GUI has also been included in each notebook to monitor the metrics and losses of the training & validation process.
 - Evaluation is done on the 2nd GPU, to prevent overlapping usage on the 1st GPU that is used for training.
 ```
+
+## Inference
+### Samples
+#### Generated Audio 1
+https://github.com/bahyhelmihp/music-vae/assets/36230581/fa52c3a6-b1cc-4205-8353-a207aff34e80
+
+#### Generated Audio 2
+https://github.com/bahyhelmihp/music-vae/assets/36230581/89918430-ec38-4db1-a0a9-2240d54816fe
+
+### Interpolation
+#### Interpolation of Generated Audio 1 & Generated Audio 2
+https://github.com/bahyhelmihp/music-vae/assets/36230581/5f319853-9086-43ff-ae7b-5e7d1d65e6a5
+
+- Full samples of generated 4-bar drums audio and interpolations can be found on [results](https://github.com/bahyhelmihp/music-vae/tree/main/results) folder.
 
 ## Acknowledgements
 The code is developed based on https://github.com/magenta/magenta/tree/main/magenta/models/music_vae.
